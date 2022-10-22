@@ -1,0 +1,25 @@
+.navi {
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navi ul {
+  display: flex;
+  list-style: none;
+}
+.navi ul li {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #222222;
+}
+.links {
+  text-decoration: none;
+  color: #222222;
+}
+.logo-link {
+  color: #333333;
+  text-decoration: none;
+}

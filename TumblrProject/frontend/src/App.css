@@ -1,0 +1,245 @@
+/*NAV FORM BEGIN*/
+.navi {
+  display: flex;
+  justify-content: space-between;
+  background-color: #001935;
+}
+
+.navdiv {
+  border-bottom: 2px solid #1e344d;
+  background-color: #001935;
+  }
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+  background-color: #405368;
+  border-radius: 2px;
+}
+
+input::placeholder{
+  color: #bcc3ca;
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+}
+
+input.nosubmit {
+  width: 360px;
+  border:none;
+  border-radius: 5px;
+  display: block;
+  padding: 5px 4px 5px 40px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.navi button{
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family:Helvetica, sans-serif;
+  padding: 12px 20px;
+  border: none; 
+  border-radius: 5px;
+}
+
+
+
+.naviright, .navibuttonlogin, .loginnaviright{
+  background-color: #00cf35;
+  margin-left: 10px;
+} 
+.naviright, .navibuttonsignup, .loginnavibuttonsignup{
+  background-color: #00b8ff;
+  margin-left: 10px;
+}
+
+/*NAV FORM END*/
+
+
+
+/*HOME BODY START*/
+.homebody{
+  padding: 0 10%;
+  background-color: #001935;
+  display: flex;
+}
+
+.homebodyleft{
+  border-right: 2px solid #1e344d;
+  border-bottom: 2px solid #1e344d;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homebodyleft ul{
+  color: white;
+  display: flex;
+}
+
+.homebodyleft li{
+  color:white;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.homebodyleft img{
+  width: 1.5vw;
+  margin: 0 7px;
+}
+
+.homebody ul li:hover{
+  background-color: #405368;
+}
+
+.firstcubeicon, .secondcubeicon{
+  padding: 10px 5px ;
+}
+
+.firstcubeicon:hover{
+  background-color: #405368;
+}
+.secondcubeicon:hover{
+  background-color: #405368;
+}
+
+.twomenuicons{
+  padding: 20px 20px;
+}
+
+.homebodyright{
+  width: 20vw;
+  background-color: #122943;
+  margin: 15px;
+  padding: 5px 15px;
+  color:white;
+}
+
+.homebody4cube{
+  margin: 15px 10px;
+}
+
+.homebody4cube h4{
+  padding: 2px 7px;
+  margin: 0 20px 0 5px;
+  width: 2vw;
+  height: 5.5vh;
+  border-radius: 50%;
+  color: black;
+}
+
+.homebody4cube p{
+  color: rgb(235, 235, 235)
+}
+
+.homebody4cube h5{
+  color:white;
+}
+
+.homebody4cubeone{
+  display: flex;
+  padding: 10px 0 0 0 ;
+  margin: 3px;
+  border-radius: 3%;
+  justify-content: space-between;
+}
+
+.homebody4cubeoneimg img{
+  width: 5vw;
+  height: 10vh;
+  object-fit: contain;
+  display: flex;
+  border-radius: 20%;
+}
+/*HOME BODY END*/
+
+/*LOGIN PAGE BEGIN*/
+
+.loginnavdiv{
+  position: absolute;
+  justify-content: space-between;
+}
+
+.loginbody{
+  margin: 0 32%;
+  background-color: #131910db;
+  padding: 0.5% 4%;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginbody h1 {
+  font-family:"Helvetica Neue HelveticaNeue Helvetica Arial";
+  font-size: 80px; 
+  font-weight:bolder;
+  text-align: center;
+  color: white;
+}
+  .loginnavi {
+    margin-left: 60vw;
+  }
+
+  .loginnavi button{
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family:Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none; 
+    border-radius: 5px;
+  }
+
+  form.loginnosubmit {
+    border: none;
+    padding: 0;
+    border-radius: 2px;
+  }
+
+  .loginnosubmit {
+    background-color: #ffffff70 ;    
+    font-weight: 500;
+    color: ffffff;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  input.loginnosubmit {
+    width: 300px;
+    border:none;
+    border-radius: 5px;
+    display: block;
+    padding: 5px 4px 5px 40px;
+  }
+
+  .loginbody .form-control{
+    height: 55px;
+    color: black;
+  }
+
+.loginfooter{
+  display: flex;
+  justify-content: space-between;
+    
+}
+
+.loginfooterul{
+  display: flex;
+}
+
+.loginfooterpost li{
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+}
+
+.loginfooter li{
+  font-size: 17px;
+  color: black;
+  padding-right: 10px;
+}
+
+/* .loginfooter ul{
+
+} */
+
+/*LOGIN PAGE END*/
