@@ -1,26 +1,36 @@
+require('dotenv').config()
 const express = require('express')
-const mongoose  = require('mongoose')
+const mongoose = require('mongoose')
+const cors = require('cors')
+const routes = require('./routes/routeindex')
+
 const app = express()
-const routes = require('./backend/routes/routeindex')
-const URL = "mongodb://localhost:27017/burmaa"
-const PORT = 5003
 
-mongoose.connect(URL,{useNewUrlParser:true,useUnifiedTopology:true})
-mongoose.connection.on('open',()=>console.log("Mongodb Connected"))
-mongoose.connection.on('error',(e)=> console.log(e))
+app.use(express.json())
+app.use(cors())
+app.use(cookieParser())
 
 
+
+
+//Routes
 app.use(routes)
 
 
-app.get("/", function(req,res){
-    res.send({"msg":"API working"})
+//MongoDB connect
+const URI = process.env.MONGODB_URL
+mongoose.connect(URI, {
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}, err => {
+    if(err) throw err;
+    console.log('Connected to mongodb')
 })
 
 
-app.get("/databasepage", function(req,res){
-    
-});
-
-app.listen(PORT)
-console.log("Running on http://localhost:"+PORT)
+const port = process.env.PORT || 5023
+http.listen(port, () => {
+    console.log("Server started at port", port)
+})
