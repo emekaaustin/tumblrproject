@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const cookieParser = require('cookie-parser')
+
 const routes = require('./routes/routeindex')
 
 const app = express()
@@ -20,8 +22,8 @@ app.use(routes)
 //MongoDB connect
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI, {
-    useCreateIndex: true,
-    useFindAndModify: false,
+    // useCreateIndex: true,
+    // useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => {
@@ -31,6 +33,6 @@ mongoose.connect(URI, {
 
 
 const port = process.env.PORT || 5023
-http.listen(port, () => {
+app.listen(port, () => {
     console.log("Server started at port", port)
 })
