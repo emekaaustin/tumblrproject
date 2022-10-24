@@ -4,14 +4,15 @@ const Posts = require("../../models/posts")
 const routes = function (app) {
     app.post("/category", async (req, res) => {
         try {
+            // console.log(req.body)
             const { name } = req.body
 
             const cat = await Categories.findOne({ name })
             if (cat) return res.status(400).json({ msg: "This category already exits" })
 
             const newCategory = new Categories({ name })
-
-            await newCategory.save
+            console.log(newCategory)
+            await newCategory.save()
 
             res.json({
                 msg: "New category added"
